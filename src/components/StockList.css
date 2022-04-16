@@ -1,0 +1,76 @@
+.StockList {
+    padding-top: 3rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.stocklist__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.125rem;
+    padding-bottom: 2rem;
+}
+
+.stocklist__item__title {
+    display: flex;
+    align-items: center;
+}
+
+.stocklist__item__title span {
+    margin-left: 0.5rem;
+}
+
+.stocklist__item__action button {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity .25s;
+}
+
+.stocklist__item__action button:hover {
+    opacity: .8;
+}
+
+.action--edit {
+    color: var(--alert-darkGreen);
+}
+
+.action--remove {
+    color: var(--alert-darkRed);
+}
+
+.stocklist__clear {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.stocklist__clear__btn {
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    color: var(--alert-darkRed);
+}
+
+.stocklist__clear__btn::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--alert-darkRed);
+    transform-origin: 100% 100%;
+    transition: transform .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.stocklist__clear__btn:hover::before {
+    transform: scaleX(0);
+}

@@ -1,0 +1,30 @@
+.Brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.brand__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--green);
+    margin-right: 1rem;
+}
+
+.brand__logo__icon {
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.brand__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
